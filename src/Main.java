@@ -13,9 +13,10 @@ public class Main {
         System.out.println("PLEASE ENTER YOUR NAME");
 
 
+
         String username_enetered = scan.nextLine();
 
-        System.out.print("PLEASE ENTER YOUR PASSWORD");
+        System.out.print("PLEASE ENTER YOUR PASSWORD\n");
 
         String password_enetered = scan.nextLine();
 
@@ -24,7 +25,7 @@ public class Main {
         System.out.print("WHAT WOULD YOU LIKE TO DO?");
         System.out.print("TYPE A FOR ADDIG MONEY TO YOUR ACCOUNT");
         System.out.print("TYPE B FOR WITHDRAWING MONEY FROM YOUR ACCOUNT");
-        System.out.print("TYPE Q TO QUIT");
+        System.out.print("TYPE Q TO QUIT\ngj");
 
         char option = scan.next().charAt(0);
         char option1 = Character.toUpperCase(option);
@@ -32,32 +33,34 @@ public class Main {
 
         switch (option1){
 
-           case 'A': {
+           case 'A': 
 
                 System.out.println("HOW MUCH MONEY WOULD YOU LIKE TO ADD?");
+
+                scan.nextLine();
 
                 String amount_entry = scan.nextLine();
 
                 double amount = Double.parseDouble(amount_entry);
                 a1.entry(amount);
                 break;
-            } 
-            case 'B': {
+            
+            case 'B': 
 
                 System.out.println("HOW MUCH MONEY WOULD YOU LIKE TO SUBSTRACT?");
 
-                String amount_entry = scan.nextLine();
+                String amount_substracted = scan.nextLine();
 
-                double amount = Double.parseDouble(amount_entry);
-                a1.withdraw(amount);
+                double amount_sub = Double.parseDouble(amount_substracted);
+                a1.withdraw(amount_sub);
                 break;
-            } 
-            case 'Q': {
+             
+            case 'Q': 
 
                 System.out.println("THANKS FOR TRUSTING US");
 
                 break;
-            } 
+            
 
         }//switch
 
