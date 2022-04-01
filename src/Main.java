@@ -25,7 +25,7 @@ public class Main {
         System.out.print("WHAT WOULD YOU LIKE TO DO?");
         System.out.print("TYPE A FOR ADDIG MONEY TO YOUR ACCOUNT");
         System.out.print("TYPE B FOR WITHDRAWING MONEY FROM YOUR ACCOUNT");
-        System.out.print("TYPE Q TO QUIT\ngj");
+        System.out.print("TYPE Q TO QUIT\n");
 
         char option = scan.next().charAt(0);
         char option1 = Character.toUpperCase(option);
